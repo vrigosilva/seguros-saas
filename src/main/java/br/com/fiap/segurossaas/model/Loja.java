@@ -23,7 +23,6 @@ public class Loja {
 	private String senha;
 	
 	public Loja(){
-		
 	}
 
 	public Long getId() {
