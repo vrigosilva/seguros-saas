@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>ListaVIP</title>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div class="container" >
-			<div class="jumbotron" align="center" style="margin-top: 50px;">
-				<h1>Seja bem vindo ao SEGUROS-SAAS</h1>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Tell the browser to be responsive to screen width -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>SeguroSaaS - Login</title>
+
+
+<link href="assets/css/login.css"
+	rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<div class="login-page">
+		<div class="form">
+		
+			<h1>SeguroSaaS</h1>
+
+			<form class="login-form" th:action="@{/logar}" method="POST">
+				<input type="text" placeholder="username" id="usuario" name="usuario" />
+				<input type="password" placeholder="password" id="senha" name="senha" />
+				<button type="submit">login</button>
 				
-				<div align="center">
-					<a href="login" class="btn btn-lg btn-primary">Login</a>
-				</div>
-			</div>
+
+			</form>
 		</div>
-	    
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	    <script src="bootstrap/js/bootstrap.min.js"></script>
-	
-	</body>
+	</div>
+
+
+</body>
+
 </html>
