@@ -10,9 +10,9 @@
 	</parent>
 
 	<artifactId>seguros-saas-web</artifactId>
+	<name>seguros-saas-web</name>
 	<packaging>jar</packaging>
 
-	<name>seguros-saas-web</name>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
@@ -32,7 +32,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -53,13 +52,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>br.com.fiap.segurossaas</groupId>
 			<version>0.0.1-SNAPSHOT</version>
 			<artifactId>seguros-saas-commons</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>

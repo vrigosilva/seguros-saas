@@ -3,9 +3,14 @@ package br.com.fiap.segurossaas.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity(name="produto")
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Produto {
 	
 	@Id
@@ -18,7 +23,7 @@ public class Produto {
 	
 	private String descricao;
 	
-	@OneToOne
+	@ManyToOne
 	private Loja loja;
 	
 	public Produto(){

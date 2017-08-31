@@ -3,8 +3,13 @@ package br.com.fiap.segurossaas.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity(name="segurado")
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Segurado {
 	
 	@Id
